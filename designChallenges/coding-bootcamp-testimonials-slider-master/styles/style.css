@@ -1,0 +1,41 @@
+.main-container {
+  max-width: 1400px;
+  border: solid red;
+  align-items: center;
+}
+
+.container {
+  background-image: url(/images/pattern-curve.svg);
+  border: solid red;
+  height: 700px;
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+.message {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.description-container {
+  display: flex;
+}
+.description-container .name {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.description-container .profession {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.person-image {
+  width: 270px;
+  height: 270px;
+}
+
+/*# sourceMappingURL=style.css.map */

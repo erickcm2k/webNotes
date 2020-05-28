@@ -1,0 +1,48 @@
+$main-font: 'Inter', sans-serif;
+
+.main-container {
+    max-width: 1400px;  
+    border: solid red;
+    align-items: center;
+}
+
+.container {
+    background-image: url(/images/pattern-curve.svg);
+    border: solid red;
+    height: 700px;
+
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.message-container {
+
+}
+
+.message {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.description-container {
+    display: flex;
+    
+    .name {
+        font-size: 18px;
+        font-family: $main-font;
+        font-weight: 700;
+    }
+
+    .profession {
+        font-size: 16px;
+        font-family: $main-font;
+        font-weight: 500;
+    }
+}
+
+.person-image {
+    width: 270px;
+    height: 270px;
+}
