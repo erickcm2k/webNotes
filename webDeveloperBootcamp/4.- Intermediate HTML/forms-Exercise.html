@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form>
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" required>
+
+            <br>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio">
+
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio">
+
+            <label for="other">Other</label>
+            <input name="gender" id="other" type="radio">
+
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" minlength="5" maxlength="10" required>            
+
+            <br>
+            <label>Birthday:</label>
+
+            <select>
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+            </select>
+
+            <select>
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <select>
+                <option>Year</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>1025</option>
+            </select>
+
+            <br>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms" required>
+
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

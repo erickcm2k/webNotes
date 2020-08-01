@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+
+<!-- Action: Where the data is going to be send.
+     Method: What HTTP method. -->
+
+        <form method="GET">
+
+            <label for="username">Email </label>
+            <input name="username" type="email" placeholder="Your username" required>
+            
+            <label for="password">Password </label>
+            <input name="password" type="password" placeholder="Your password" required >
+        
+            <br>
+            <label for="great">+18</label>
+            <input name="ageChoice" id="great" type="radio" value="PASS">
+
+            <label for="minor">-18</label>
+            <input name="ageChoice" id="minor" type="radio" value="NOT PASS">            
+
+            <p>Favorite color</p>
+            <select name="colorChoice">
+                <option>Red</option>
+                <option>Green</option>
+                <option>Blue</option>
+            </select>
+
+            <textarea name="paragraph" rows="10" cols="10"></textarea>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
