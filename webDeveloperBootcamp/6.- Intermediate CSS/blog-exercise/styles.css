@@ -1,0 +1,38 @@
+body {
+    font-size: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    margin: 0 auto 0 auto;
+    width: 50%;
+    max-width: 500px;
+    border: 10px solid gray;
+    padding: 10px;
+}
+
+.date {
+    color: #3498db;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding-bottom: 2px;
+}
+
+.description {
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.firstP {
+    border-left: 2px solid gray;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    font-weight: 800;
+}
+
+

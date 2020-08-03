@@ -1,0 +1,26 @@
+body {
+    font-size: 10px;
+}
+/* em is equal to the size of the em (enclosing element) */
+h1 {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#important {
+    font-family: sans-serif ;
+    font-size: 1.8em;
+}
+
+#the-bold {
+    font-weight: bold;
+}
+
+#spaced {
+    line-height: 4;
+}

@@ -1,0 +1,37 @@
+h1 {
+    width: 50%;
+    /* background-color: red; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+table {
+    margin: 20px auto;
+}
+
+.center {
+    border: 2px solid red;
+}
+
+.topLeft {
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+}
+
+.topRight {
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+}
+.bottomLeft {
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+.bottomRight {
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}
