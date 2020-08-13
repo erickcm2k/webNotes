@@ -3,6 +3,22 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+.blurb h2 {
+    font-size: 2.5rem;
+    color: #ea1c2c;
+}
+
+.blurb p {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
 #main-navbar .navbar-brand {
     color: #ea1c2c;
 }
@@ -27,6 +43,10 @@ body {
 #heading-group h2 {
     font-weight: 100;
     font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: rgb(222, 192, 222);
 }
 
 @media (max-width: 1200px) {
