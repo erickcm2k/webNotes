@@ -12,22 +12,27 @@ body {
 }
 
 #stripe {
-    background: white;
+    padding: 15px;
+    background: whitesmoke;
     height: auto;
     text-align: center;
 }
 
 h1 {
-    color: white;
+    color: whitesmoke;
     text-align: center;
 }
 
 h2 {
-    color: white;
+    color: whitesmoke;
     text-align: center;
 }
 
 #container {
     margin: 0 auto 0 auto;
     max-width: 600px;
+}
+
+.selected {
+    background: blue;
 }
