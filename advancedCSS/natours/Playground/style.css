@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-container {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  height: 400px;
+  background-image: url(nat-2-large.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.text-container {
+    font-size: 2rem;
+}
+
+#upper-left {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+#upper-right {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+#center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bottom-left {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+#bottom-right {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+

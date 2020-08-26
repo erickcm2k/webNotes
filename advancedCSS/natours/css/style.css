@@ -23,6 +23,11 @@ body {
   padding: 30px;
 }
 
+/*
+*
+* Properties for header.
+*
+*/
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -32,8 +37,8 @@ body {
       rgba(40, 180, 131, 0.6)
     ),
     url("../img/hero.jpg");
-  position: relative; 
-  /* Relative position allows us to use left, top, etc...  */
+  position: relative;
+  /* Relative position allows us to use left, top, etc... , z index  */
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -54,21 +59,25 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
+  text-align: center;
 }
 
 .heading-primary {
   color: white;
   text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
-/* Display block property makes elemenst use
+/* Display block property makes elements use
 100% of their container. Also makes line jumps automatically. */
 .heading-primary-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
 }
 
 .heading-primary-sub {
@@ -76,4 +85,56 @@ body {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 17.5px;
+
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 15px 40px;
+  display: inline-block;
+  transition: transform 0.7s;
+}
+
+.button-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.button:hover {
+  transition-duration: 0.1s;
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  transform: translateY(1px);
+  transition-duration: 0.1s;
 }
