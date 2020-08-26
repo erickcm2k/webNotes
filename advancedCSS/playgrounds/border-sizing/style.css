@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.not-applied {
+    box-sizing: none;
+    margin: 0 auto;
+    border: 1px solid red;
+    height: 200px;
+    width: 400px;
+    padding: 40px;
+}
+
+.applied {
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid red;
+    height: 200px;
+    width: 400px;
+    padding: 40px;
+}
