@@ -44,44 +44,39 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo-container {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__logo-container {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   color: white;
   text-transform: uppercase;
-  margin-bottom: 6rem; }
-
-/* Display block property makes elements use
-100% of their container. Also makes line jumps automatically. */
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1.5s; }
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1.75rem;
-  animation-name: moveInRight;
-  animation-duration: 1.5s; }
+  margin-bottom: 6rem;
+  /* Display block property makes elements use
+  100% of their container. Also makes line jumps automatically. */ }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1.5s; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.75rem;
+    animation-name: moveInRight;
+    animation-duration: 1.5s; }
 
 @keyframes moveInLeft {
   0% {
@@ -99,8 +94,7 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.button:link,
-.button:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10rem;
@@ -108,15 +102,15 @@ body {
   display: inline-block;
   transition: transform 0.7s; }
 
-.button--white {
+.btn--white {
   background-color: #fff;
   color: #777; }
 
-.button:hover {
+.btn:hover {
   transition-duration: 0.1s;
   transform: translateY(-0.3rem);
   box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.3); }
 
-.button:active {
+.btn:active {
   transform: translateY(0.1rem);
   transition-duration: 0.1s; }
