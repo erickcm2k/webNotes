@@ -1,0 +1,26 @@
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    /* Display block property makes elements use
+    100% of their container. Also makes line jumps automatically. */
+    &--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+  
+      animation-name: moveInLeft;
+      animation-duration: 1.5s;
+    }
+  
+    &--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1.75rem;
+  
+      animation-name: moveInRight;
+      animation-duration: 1.5s;
+    }
+  }

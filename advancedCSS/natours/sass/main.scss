@@ -1,158 +1,17 @@
-/*
-COLORS:
+@import "./abstract/functions";
+@import "./abstract/mixings";
+@import "./abstract/variables";
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
+@import "./base/animation";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utils";
 
-*/
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
 
-/* Clean start, deletes different properties added by browsers. */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "./components/button";
 
-/*
-*    Browsers default is 16px. So 62.5% of 16px equals 10px.
-*    Doing things this way helps us to don't overwrite font sizes specified by people.
-*/
-html {
-  font-size: 62.5%;
-}
+@import "./layout/header.scss";
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /* font-size: 16px; */
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: $color-grey-dark;
-  padding: 3rem;
-  box-sizing: border-box;
-}
+@import "./pages/home.scss";
 
-/*
-*
-* Properties for header.
-*
-*/
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      /* Gradient direction start at left top and will end at right bottom*/
-        rgba($color-primary-dark, 0.8),
-      rgba($color-primary-light, 0.8)
-    ),
-    url("../img/hero.jpg");
-  position: relative;
-  /* Relative position allows us to use left, top, etc... , z index  */
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  &__logo-container {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-  }
-  &__logo {
-    height: 3.5rem;
-  }
-
-  &__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-}
-
-.heading-primary {
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
-  /* Display block property makes elements use
-  100% of their container. Also makes line jumps automatically. */
-  &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
-    animation-name: moveInLeft;
-    animation-duration: 1.5s;
-  }
-
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.75rem;
-
-    animation-name: moveInRight;
-    animation-duration: 1.5s;
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-.btn {
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 10rem;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    transition: transform 0.7s;
-  }
-  &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-  }
-
-  &:hover {
-    transition-duration: 0.1s;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.5rem 0.6rem rgba($color-black, 0.3);
-  }
-
-  &:active {
-    transform: translateY(0.1rem);
-    transition-duration: 0.1s;
-  }
-}
+@import "./layout/grid"

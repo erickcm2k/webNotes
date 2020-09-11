@@ -1,0 +1,27 @@
+/* Clean start, deletes different properties added by browsers. */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*
+*    Browsers default is 16px. So 62.5% of 16px equals 10px.
+*    Doing things this way helps us to don't overwrite font sizes specified by people.
+*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 3rem;
+  box-sizing: border-box;
+}
