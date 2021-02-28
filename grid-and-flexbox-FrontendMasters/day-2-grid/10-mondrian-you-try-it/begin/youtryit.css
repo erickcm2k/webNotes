@@ -3,50 +3,44 @@
   width: 633px;
   height: 458px;
   background: url(mondrian2.png) no-repeat;
- 
+  display: grid;
 }
 div {
-	border: 1px solid black;
-	background-color: white;
-	opacity: 0.5;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.8;
 }
-.a {
 
+/* 
+  5 rows
+  7 columns
+*/
+
+.a {
+  grid-row: ;
+  grid-column:;
+  background-color: red;
 }
 .b {
-
+  background-color: yellow;
 }
 .c {
-
 }
 .d {
-
+  background-color: red;
 }
 .e {
-
 }
 .f {
-
+  background-color: blue;
 }
 .g {
-	
 }
 .h {
-	
 }
 .i {
-	
+  background-color: blue;
 }
 .j {
-	
+  background-color: yellow;
 }
-
-
-
-
-
-
-
-
-
-
