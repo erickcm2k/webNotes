@@ -13,4 +13,4 @@ const sayHello = (name?: string) => {
 };
 
 sayHello();
-sayHello("Erick");
+sayHello("Max");
