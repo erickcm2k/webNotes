@@ -1,13 +1,14 @@
 class Department {
   // private name: string;
+  static currentIVA = 0.16;
   protected employees: string[] = [];
 
   constructor(protected id: number, protected name: string) {
     this.name = name;
   }
 
-  static getTaxPrice = (price: number): number => {
-    return price * 0.16;
+  static getIVA = (price: number): number => {
+    return price * Department.currentIVA;
   };
 
   printDepartmentInfo = (): void => {
@@ -52,7 +53,8 @@ const dep = new Department(101, "Fauna");
 dep.addEmployee("Max");
 dep.addEmployee("Gerry");
 dep.printEmployeeInformation();
-console.log(Department.getTaxPrice(1000));
+console.log(Department.getIVA(1000));
+console.log(Department.currentIVA);
 
 // const itDep = new AccountingDept(999, ["A", "B", "C"]);
 // itDep.addEmployee("George");
