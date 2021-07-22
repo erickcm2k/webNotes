@@ -1,38 +1,17 @@
 "use strict";
-// interface Admin {
-//   name: string;
-//   privileges: string[];
-// }
-const e1 = {
-    name: "Max",
-    privileges: ["priv1", "priv2"],
-    startDate: new Date(),
+// let myInput = <HTMLInputElement>document.getElementById("user-input")!;
+let myInput = document.getElementById("user-input");
+myInput.value = "Hello there";
+const errorBag = {
+    email: "Not a valid email.",
+    email2: "Not a valid email.",
+    email3: "Not a valid email.",
 };
-const printEmployeeInformation = (emp) => {
-    "startDate" in emp
-        ? console.log("Type is Employee.")
-        : console.log("Type is Admin.");
+// Optional chaining
+const car = {
+    //   brand: "VW",
+    year: 2019,
+    model: "Jetta",
 };
-printEmployeeInformation(e1);
-class Car {
-    drive() {
-        console.log("Im driving.");
-    }
-}
-class Truck {
-    drive() {
-        console.log("Im driving with cargo.");
-    }
-    loadCargo(amount) {
-        console.log(`I'm loaded with ${amount} tons.`);
-    }
-}
-const v1 = new Car();
-const v2 = new Truck();
-const printVehicleInfo = (vehicle) => {
-    vehicle.drive();
-    //   "loadCargo" in vehicle && vehicle.loadCargo(10);
-    vehicle instanceof Truck && vehicle.loadCargo(10);
-};
-printVehicleInfo(v1);
-printVehicleInfo(v2);
+// Useful for nested objects inside an object.
+// console.log(car?.brand);
